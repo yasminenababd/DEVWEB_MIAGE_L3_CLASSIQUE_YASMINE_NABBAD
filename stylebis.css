@@ -1,0 +1,232 @@
+/*------------------------------------------------*/
+
+/*LOGIN*/
+
+body{ /*Aussi présent dans toutes les autres pages du site*/
+	background-color: #DCC2BC;
+	font-family: 'Times New Roman';
+}
+
+#divlog{
+	width: 35%;
+	border: 2px solid #92726B;
+	box-shadow: 60px -16px #2CBD2B ;
+	padding: 1em;
+	background-color:#C3A993;
+	float: left;
+	margin-left: 30%; 
+	margin-top: 18%; 
+}
+
+.textbox{
+	display: block; 
+	width: 300px; 
+	float: right
+}
+
+/*ERREUR LOGIN*/
+
+.retour{
+	margin-top:20%;
+	font-size:20px;
+	text-align: center;
+}
+
+a{ /*Aussi présent dans menu.php*/
+	color:white;
+	text-decoration: none;
+}
+
+.errortext{ /*Aussi présent pour tous les messages d'erreur à afficher*/
+	margin-top:1%;
+	font-size:20px;
+	text-align: center;
+	color:#8E6060;
+}
+
+/*MENU ---------------------------------------------------------------*/
+/*PRELOADER*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D4B2AB;
+  z-index: 99999;
+  text-align: center;
+  /* position et couleur de fond, du preloader (rappel : outils de chargement */
+}
+#status {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  top: 35%;
+  margin: 0 auto;
+  right: 35px;
+}
+#status span {
+  position: absolute;
+  border-radius: 999px;
+}
+#status span:nth-child(1) {
+  border: 5px solid #92726B;
+  border-top: 5px solid transparent;
+  width: 70px;
+  height: 70px;
+  animation: spin1 2s infinite linear;
+}
+#status span:nth-child(2) {
+  border: 5px solid #2CBD2B;
+  border-top: 5px solid transparent;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  animation: spin2 2s infinite linear;
+  margin-left: 35px;
+}
+/*les deux logo de chargements : embriquement et position et couleur*/
+@keyframes spin1 {
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.75;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }}
+  @keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.75;
+  }}
+
+/*BARRE DE MENU*/
+
+li{
+	list-style-type: none;
+	display:block;
+	font-size: 30px;
+}
+
+nav{
+	font-family:'Source code pro', Times New Roman;
+  	width: 100%;
+  	background-color:#C3A993;
+}
+
+nav > ul{
+  margin: 0 px;
+  padding: 0 px;
+}
+
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li > a{
+  padding:10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.clients,.crédits,.médicaments, .déconnexion, .quitter{
+	margin-top: 2%;
+	float:left;
+	margin-left:5%
+}
+
+/*-------------------------------------------------------------------*/
+
+/*ACCEUIL*/
+
+h1{
+  font-size: 200%;
+  font-family: Time New Roman;
+  color :#2CBD2B;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+#acceuiltext{
+	color: #FFF;
+	width: 50%;
+	margin-left: 25%;
+	text-align: justify;
+	font-size:20px;
+}
+
+/*-------------------------------------*/
+
+/*CLIENTS*/
+
+p{
+	color:white;
+	font-style: 'Times New Roman';
+}
+
+#divajout{
+	width: 35%;
+	border: 2px solid #92726B;
+	box-shadow: 60px -16px #2CBD2B;
+	padding: 1em;
+	background-color:#C3A993;
+	float: left;
+	margin-left: 5%;
+}
+
+#divachat{
+	width: 35%;
+	border: 2px solid #92726B;
+	box-shadow: 60px -16px #2CBD2B;
+	padding: 1em;
+	background-color:#C3A993;
+	float: left;
+	margin-left: 10%;
+}
+
+.divafficher{ /*Présent dans tous les endroit où l'on affiche une liste*/
+	width: 92.5%;
+	border: 2px solid #92726B;
+	box-shadow: 60px -16px #2CBD2B ;
+	padding: 1em;
+	background-color:#C3A993;
+}
+
+table{
+	width: 90%;
+}
+
+tr,td{
+	border: 1px solid #92726B;
+	background-color: #DCC2BC;
+}
+
+.recherche{
+	margin-left: 70%; 
+	width: 30%;
+}
+/*-------------------------------------*/
+
+/*CREDIT*/
